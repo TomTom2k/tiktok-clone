@@ -1,6 +1,10 @@
 @import 'normalize.css';
 
-:root {}
+:root {
+    --black: #000;
+    --text-color: #333;
+    --max-width: 1150px;
+}
 
 * {
     margin: 0;
@@ -13,4 +17,15 @@ body {
     font-family: sans-serif;
     line-height: 1.5;
     text-rendering: optimizeSpeed;
+}
+
+button,
+input,
+[tabindex] {
+    border: none;
+    outline: none;
+}
+
+a[href] {
+    color: var(--text-color);
 }
