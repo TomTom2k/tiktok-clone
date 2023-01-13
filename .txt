@@ -1,0 +1,4 @@
+oh-my-posh init pwsh ~\AppData\Local\Programs\oh-my-posh\themes\jandedobbeleer.omp.json | Invoke-Expression
+Set-Alias neofetch winfetch
+Remove-Item Alias:curl
+clear

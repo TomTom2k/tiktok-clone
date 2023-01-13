@@ -1,7 +1,10 @@
 @import 'normalize.css';
 
 :root {
+    --primary: #fe2c55;
     --black: #000;
+    --gray: gray;
+    --white: #fff;
     --text-color: #333;
     --max-width: 1150px;
 }
@@ -28,4 +31,5 @@ input,
 
 a[href] {
     color: var(--text-color);
+    text-decoration: none;
 }
