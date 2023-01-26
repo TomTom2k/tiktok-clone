@@ -26,6 +26,8 @@ import images from '../../../../assets/images';
 import AccountItem from '../../../AccountItem';
 import Button from '../../../Button';
 import Menu from '../../../Popper/Menu';
+import { InboxIcon, MessageIcon } from '../../../Icons';
+import Image from '../../../Image';
 
 const cx = classNames.bind(styles);
 
@@ -156,6 +158,16 @@ const Header = () => {
 									<FontAwesomeIcon icon={faCloudArrowUp} />
 								</button>
 							</Tippy>
+							<Tippy content="Message" placement="bottom">
+								<button className={cx('action-btn')}>
+									<MessageIcon />
+								</button>
+							</Tippy>
+							<Tippy content="Inbox" placement="bottom">
+								<button className={cx('action-btn')}>
+									<InboxIcon />
+								</button>
+							</Tippy>
 
 							{/* <div className={cx('current-user')}></div> */}
 						</>
@@ -170,9 +182,9 @@ const Header = () => {
 						onChange={handlerMenuChange}
 					>
 						{currentUser ? (
-							<img
+							<Image
 								className={cx('user-avatar')}
-								src="https://th.bing.com/th/id/R.109541d2d1a27d3a9490ac9a9528a6b5?rik=amB8UA3yMwPJNg&pid=ImgRaw&r=0"
+								src="https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/c116e49cfa7d637049def7d2abf1e64f~c5"
 								alt="nguyen van a"
 							/>
 						) : (
