@@ -14,12 +14,14 @@ import {
 import Tippy from '@tippyjs/react';
 
 import styles from './Header.module.scss';
-import images from '../../../../assets/images';
-import Button from '../../../Button';
-import Menu from '../../../Popper/Menu';
-import { InboxIcon, MessageIcon } from '../../../Icons';
-import Image from '../../../Image';
+import images from '../../../assets/images';
+import Button from '../../../components/Button';
+import Menu from '../../../components/Popper/Menu';
+import { InboxIcon, MessageIcon } from '../../../components/Icons';
+import Image from '../../../components/Image';
 import Search from '../Search';
+import { Link } from 'react-router-dom';
+import configs from '../../../configs';
 
 const cx = classNames.bind(styles);
 
@@ -90,14 +92,14 @@ const Header = () => {
 		},
 	];
 
-	const currentUser = true;
+	const currentUser = false;
 
 	return (
 		<header className={cx('wrapper')}>
 			<div className={cx('inner')}>
-				<div className={cx('logo')}>
+				<Link to={configs.routes.home} className={cx('logo')}>
 					<img src={images.logo} alt="" />
-				</div>
+				</Link>
 
 				<Search />
 
